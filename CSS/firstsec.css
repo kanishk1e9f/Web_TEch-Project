@@ -1,0 +1,143 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+* {
+  font-family: Nunito, sans-serif;
+}
+body {
+  margin: auto;
+  padding: 0;
+}
+.container {
+  width: 100%;
+  height: 100vh;
+  background-image: linear-gradient(
+    rgba(35, 33, 31, 0.3),
+    rgba(92, 108, 107, 0.3)
+  );
+  position: relative;
+  padding: 0 5%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+nav {
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  /* padding: 20px 8%; */
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  cursor: pointer;
+  padding: 2px 5% 2px 5%;
+}
+
+.logo {
+  width: 25%;
+  height: auto;
+  margin: 0;
+  padding: 0;
+  scroll-behavior: smooth;
+  list-style: none;
+}
+
+nav ul li {
+  list-style: none;
+  display: inline-block;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: rgb(249, 247, 245);
+  /* font-size: 190%; */
+  padding: 4px 75px;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+
+.head_nav:hover {
+  background-image: linear-gradient(
+    rgba(221, 155, 55, 0.922),
+    rgba(255, 255, 255, 0.3)
+  );
+  background-color: black;
+  border-radius: 100px;
+}
+.head_nav {
+  font-size: 1.5rem;
+}
+.btn {
+  background-color: white;
+  color: black;
+  border-radius: 100px;
+  padding: 4px 75px;
+  font-size: 1.5rem;
+}
+li a.btn:hover {
+  /* background-image: linear-gradient(
+      rgba(228, 196, 148, 0.922),
+      rgba(105, 222, 224, 0.3)
+    ); */
+  /* background-color: black; */
+  color: linear-gradient(rgba(228, 196, 148, 0.922), rgba(105, 222, 224, 0.3));
+  border-radius: 100px;
+}
+
+.shop_now {
+  text-align: center;
+}
+
+.shop_now h1 {
+  font-size: 160px;
+  color: #fff;
+  font-weight: 600px;
+  transition: 0.5s;
+  font-family: "Poppins", sans-serif;
+}
+
+.shop_now h1:hover {
+  -webkit-text-stroke: 2px #fff;
+  color: transparent;
+  font-family: "Poppins", sans-serif;
+}
+
+.shop_now a {
+  text-decoration: none;
+  display: inline-block;
+  color: #fff;
+  font-size: 24px;
+  border: 2px solid #fff;
+  padding: 14px 70px;
+  border-radius: 50px;
+  margin-top: 20px;
+  font-family: "Poppins", sans-serif;
+}
+.shop_now a:hover {
+  -webkit-text-stroke: 0.5px #fff;
+}
+
+.carpet_roll {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  z-index: -1;
+}
+
+@media (min-aspect-ratio: 16/9) {
+  .carpet_roll {
+    width: 100%;
+    height: auto;
+  }
+}
+
+@media (max-aspect-ratio: 16/9) {
+  .carpet_roll {
+    height: 100%;
+    width: auto;
+  }
+}
